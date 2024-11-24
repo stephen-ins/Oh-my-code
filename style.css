@@ -14,8 +14,27 @@ body {
   color: white;
 }
 
+.banniere-titre {
+  width: 50%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
 h1 {
   color: red;
+  padding: 1.5rem;
+  margin: 1rem;
+  text-align: center;
+  align-content: center;
+  border-radius: 0.5rem;
+  box-shadow: 3px 3px 42px 12px rgba(0, 0, 0, 0.5);
+}
+
+#explication {
+  padding: 1.5rem;
+  margin: 1rem;
+  text-align: center;
 }
 
 .container {
@@ -25,4 +44,88 @@ h1 {
   flex-direction: column;
   align-items: center;
   background-color: #1e2337;
+}
+
+#btnRed {
+  background-color: red;
+  height: 80px;
+  width: 80px;
+  border: solid 2px #fff;
+  border-radius: 50%;
+  position: relative;
+  animation-name: rouge;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  -webkit-box-shadow: 3px 3px 42px 12px rgba(0, 0, 0, 0.5);
+  box-shadow: 3px 3px 42px 12px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes rouge {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+
+#btnBlue {
+  background-color: blue;
+  height: 80px;
+  width: 80px;
+  border: solid 2px #fff;
+  border-radius: 50%;
+  position: relative;
+  animation-name: bleu;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  -webkit-box-shadow: 3px 3px 42px 12px rgba(0, 0, 0, 0.5);
+  box-shadow: 3px 3px 42px 12px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes bleu {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    left: 0px;
+    top: 200px;
+  }
+  50% {
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    left: 200px;
+    top: 0px;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+
+#replay {
+  width: 150px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: rgb(127, 127, 211);
+  padding: 0.5rem;
+  margin: 1rem;
+  border-radius: 0.5rem;
 }
